@@ -995,58 +995,29 @@
   }
 
   .book-3d {
-    width: 280px;
+    width: min(380px, 100%);
     position: relative;
     animation: bookFloat2 5s ease-in-out infinite;
     filter: drop-shadow(0 40px 80px rgba(0,0,0,0.8));
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   @keyframes bookFloat2 {
     0%, 100% { transform: rotate(-5deg) translateY(0); }
     50% { transform: rotate(-5deg) translateY(-14px); }
   }
 
-  .book-stack-shadow {
-    position: absolute;
-    inset: 16px -10px -12px 14px;
-    border-radius: 8px;
-    background:
-      linear-gradient(180deg, rgba(232,220,200,0.15) 0%, rgba(212,196,168,0.08) 14%, rgba(45,20,18,0.9) 14.5%, rgba(14,6,8,0.92) 100%);
-    box-shadow:
-      18px 18px 28px rgba(0,0,0,0.35),
-      inset 1px 0 0 rgba(255,255,255,0.06);
-    transform: translateZ(0);
-  }
-
-  .book-cover-frame {
-    position: relative;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #21080d;
-    border: 1px solid rgba(184,150,110,0.22);
-    box-shadow:
-      0 22px 46px rgba(0,0,0,0.45),
-      0 0 0 1px rgba(255,255,255,0.03) inset;
-  }
-
   .book-cover-image {
     width: 100%;
-    aspect-ratio: 3 / 4.35;
-    object-fit: cover;
+    max-width: 380px;
+    height: auto;
     display: block;
-  }
-
-  .book-cover-sheen {
-    position: absolute;
-    inset: 0;
-    background:
-      linear-gradient(115deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.02) 18%, transparent 34%),
-      linear-gradient(180deg, rgba(61,8,16,0.1) 0%, transparent 30%, rgba(14,6,8,0.14) 100%);
-    pointer-events: none;
   }
 
   .purchase-glow {
     position: absolute;
-    width: 300px; height: 200px;
+    width: 380px; height: 240px;
     background: radial-gradient(ellipse, rgba(184,150,110,0.12) 0%, transparent 70%);
     bottom: -40px; left: 50%; transform: translateX(-50%);
     filter: blur(20px);
@@ -1243,6 +1214,22 @@
     padding-top: 24px;
     border-top: 1px solid rgba(184,150,110,0.05);
   }
+  .footer-copy span {
+    display: block;
+  }
+  .footer-copy span + span {
+    margin-top: 10px;
+  }
+  .footer-copy a {
+    color: var(--gold);
+    text-decoration: none;
+    opacity: 0.9;
+    transition: opacity 0.3s ease, color 0.3s ease;
+  }
+  .footer-copy a:hover {
+    color: var(--cream);
+    opacity: 1;
+  }
 
   /* ============ SCROLL ANIMATIONS ============ */
   .reveal {
@@ -1302,16 +1289,39 @@
     .poems-grid { grid-template-columns: 1fr; }
     .features-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
     .purchase-inner { grid-template-columns: 1fr; }
-    .footer-inner { flex-direction: column; align-items: flex-start; }
+    .footer-inner { flex-direction: column; align-items: center; text-align: center; }
     .about-inner, .author-inner, .features-inner, .purchase-inner { padding: 0 24px; }
     .poems-grid { padding: 0 24px; }
     footer { padding: 48px 24px 32px; }
+    .footer-links {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px 22px;
+    }
+    .footer-socials {
+      justify-content: center;
+    }
     .testimonials-shell { padding: 0 24px; }
-    .testimonials-topline { padding: 0; }
+    .testimonials-header { margin-bottom: 36px; }
+    .testimonials-intro {
+      font-size: 1rem;
+      line-height: 1.65;
+      margin-top: 16px;
+    }
+    .testimonials-topline { padding: 0; margin-bottom: 20px; }
     .testimonials-viewport::before,
     .testimonials-viewport::after { width: 48px; }
     .testimonials-track { padding: 8px calc(50% - 190px) 24px; }
-    .testimonial-card { min-width: min(380px, 82vw); }
+    .testimonial-card {
+      min-width: min(380px, 82vw);
+      min-height: 260px;
+      padding: 30px 28px 26px;
+    }
+    .t-text {
+      font-size: 1.08rem;
+      line-height: 1.75;
+      margin-bottom: 26px;
+    }
   }
   @media (max-width: 600px) {
     .features-grid { grid-template-columns: 1fr 1fr; }
@@ -1339,33 +1349,120 @@
       width: 100%;
       min-width: 0;
     }
+    .testimonials-header {
+      margin-bottom: 28px;
+      padding: 0 8px;
+    }
+    .testimonials-intro {
+      font-size: 0.96rem;
+      line-height: 1.6;
+    }
     .testimonials-topline {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: stretch;
+      gap: 14px;
     }
     .testimonials-meta {
       width: 100%;
       justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
     }
     .testimonials-controls {
-      align-self: flex-end;
+      align-self: center;
+      gap: 10px;
+    }
+    .testimonials-kicker,
+    .testimonials-count {
+      font-size: 0.68rem;
+      letter-spacing: 0.16em;
     }
     .testimonials-viewport::before,
     .testimonials-viewport::after {
       display: none;
     }
-    .testimonials-track { padding: 8px 0 22px; gap: 16px; }
+    .testimonials-track { padding: 4px calc(50% - 150px) 18px; gap: 12px; }
     .testimonial-card {
-      min-width: 100%;
+      min-width: min(300px, 84vw);
       min-height: auto;
-      padding: 32px 24px 28px;
-      scroll-snap-align: start;
+      padding: 24px 18px 22px;
+      scroll-snap-align: center;
+      opacity: 1;
     }
     .testimonial-card,
     .testimonial-card.active {
       transform: none;
     }
+    .testimonial-nav {
+      width: 42px;
+      height: 42px;
+    }
+    .t-quote-mark {
+      font-size: 3.4rem;
+      margin-bottom: 12px;
+    }
+    .t-stars {
+      top: 20px;
+      right: 18px;
+      font-size: 0.64rem;
+      letter-spacing: 1.5px;
+    }
+    .t-text {
+      font-size: 0.98rem;
+      line-height: 1.7;
+      margin-bottom: 22px;
+      padding-right: 10px;
+    }
+    .t-avatar {
+      width: 38px;
+      height: 38px;
+      font-size: 0.9rem;
+    }
+    .t-name {
+      font-size: 1rem;
+    }
+    .t-detail {
+      font-size: 0.66rem;
+      letter-spacing: 0.12em;
+    }
+    .testimonials-dots {
+      gap: 8px;
+      margin-top: 2px;
+    }
+    .testimonial-dot {
+      width: 8px;
+      height: 8px;
+    }
     .newsletter-form { flex-direction: column; }
     .newsletter-input { border-right: 1px solid rgba(184,150,110,0.2); border-bottom: none; }
     .btn-primary:not(.hero-btn-primary), .btn-outline:not(.hero-btn-secondary) { width: 200px; text-align: center; }
+    .footer-logo {
+      width: 100%;
+      text-align: center;
+    }
+    .footer-links {
+      width: 100%;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .footer-links a {
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+    }
+    .footer-socials {
+      width: 100%;
+      gap: 14px;
+    }
+    .footer-copy {
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      line-height: 1.8;
+      margin-top: 24px;
+      padding-top: 20px;
+    }
+    .footer-copy span + span {
+      margin-top: 8px;
+    }
   }
+
