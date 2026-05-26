@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A February Poem, Glenda Muthuhadini</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Pinyon+Script&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<canvas id="particles-canvas"></canvas>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">A February Poem</a>
+  <ul class="nav-links">
+    <li><a href="#about">The Book</a></li>
+    <li><a href="#poems">Excerpts</a></li>
+    <li><a href="#author">Author</a></li>
+    <li><a href="#purchase">Order</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+
+  <div class="hero-content">
+    <div class="hero-kicker">A</div>
+    <h1 class="hero-title">
+      <span class="hero-title-script">february</span>
+      <span class="hero-title-block">POEM</span>
+    </h1>
+    <p class="hero-byline">A Memoir By</p>
+    <p class="hero-author">Glenda Muthuhadini</p>
+    <div class="hero-divider"></div>
+    <p class="hero-subtitle">Some stories are written in silence.</p>
+    <div class="hero-buttons">
+      <a href="#poems" class="btn-outline hero-btn-secondary">Read Preview</a>
+      <a href="#purchase" class="btn-primary hero-btn-primary">Order the Book</a>
+    </div>
+  </div>
+</section>
+<!-- ABOUT THE BOOK -->
+<section id="about">
+  <div class="about-inner">
+    <div class="about-text-side reveal-left">
+      <span class="section-label">The Story</span>
+      <h2 class="section-heading">A letter written<br>in <em>winter light</em></h2>
+      <p class="about-body">
+        <strong>Some books find you when you least expect them.</strong> <em>A February Poem</em> is not written to be read, it is written to be felt. Line by quiet line, Glenda Muthuhadini unfolds a memoir of love that ended before she understood what she had, of grief that arrived with no invitation, and of healing that happened slowly, the way February thaws into March.
+      </p>
+      <p class="about-body">
+        This is a book about the <strong>ordinary moments that shatter you</strong>, morning coffees grown cold, unanswered messages, the particular silence of a shared bed made for one. It is about learning to hold your own story with tenderness, without shame.
+      </p>
+      <span class="handwritten-note">"for everyone who lost something in winter..."</span>
+      <p class="about-body" style="margin-top:20px;">
+        Written across two years of <strong>personal reckoning</strong>, these poems breathe with the rawness of a journal and the grace of a literary gift, something rare, something necessary, something you will press into the hands of people you love.
+      </p>
+    </div>
+
+    <div class="about-visual-side reveal-right">
+      <div class="paper-card">
+        <p class="about-pull-quote">"I did not write about February because it was cold, I wrote about it because it was honest."</p>
+        <span class="poem-attr">— Glenda Muthuhadini, Author's Note</span>
+      </div>
+
+      <div class="paper-card" style="margin-left:32px;">
+        <span class="poem-title-sm">From the first pages</span>
+        <p class="poem-text">
+          <span class="poem-line-break">the month before spring</span>
+          <span class="poem-line-break">taught me to sit still</span>
+          <span class="poem-line-break">in everything that wasn't you</span>
+        </p>
+      </div>
+
+      <div style="display:flex;gap:16px;align-items:center;padding:0 16px;">
+        <div style="text-align:center;">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:2.5rem;color:var(--cream);line-height:1;">84</div>
+          <div class="section-label" style="margin:4px 0 0;">Pages</div>
+        </div>
+        <div style="width:1px;height:40px;background:rgba(184,150,110,0.2);"></div>
+        <div style="text-align:center;">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:2.5rem;color:var(--cream);line-height:1;">38</div>
+          <div class="section-label" style="margin:4px 0 0;">Poems</div>
+        </div>
+        <div style="width:1px;height:40px;background:rgba(184,150,110,0.2);"></div>
+        <div style="text-align:center;">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:2.5rem;color:var(--cream);line-height:1;">1</div>
+          <div class="section-label" style="margin:4px 0 0;">Journey</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POEM EXCERPTS -->
+<section id="poems">
+  <div class="poems-header reveal">
+    <span class="section-label">Selected Verses</span>
+    <h2 class="section-heading">Poems from the <em>collection</em></h2>
+    <div class="divider"></div>
+  </div>
+
+  <div class="poems-grid">
+    <div class="poem-card reveal" style="transition-delay:0.1s;">
+      <span class="poem-card-num">I</span>
+      <span class="poem-title-sm">Arrival</span>
+      <p class="poem-text">
+        <span class="poem-line-break">February came</span>
+        <span class="poem-line-break">like a name I'd forgotten</span>
+        <span class="poem-line-break">how to say out loud,</span>
+        <span class="poem-line-break">familiar in the throat,</span>
+        <span class="poem-line-break">strange on the tongue.</span>
+      </p>
+      <span class="poem-dash"></span>
+      <span class="poem-attr">from A February Poem</span>
+    </div>
+
+    <div class="poem-card reveal" style="transition-delay:0.2s;">
+      <span class="poem-card-num">II</span>
+      <span class="poem-title-sm">What Stays</span>
+      <p class="poem-text">
+        <span class="poem-line-break">I kept the mug.</span>
+        <span class="poem-line-break">I kept the yellow light</span>
+        <span class="poem-line-break">that fell through curtains</span>
+        <span class="poem-line-break">when you were still here.</span>
+        <span class="poem-line-break">I kept everything</span>
+        <span class="poem-line-break">that didn't know to leave.</span>
+      </p>
+      <span class="poem-dash"></span>
+      <span class="poem-attr">from A February Poem</span>
+    </div>
+
+    <div class="poem-card reveal" style="transition-delay:0.3s;">
+      <span class="poem-card-num">III</span>
+      <span class="poem-title-sm">After</span>
+      <p class="poem-text">
+        <span class="poem-line-break">healing is not a door</span>
+        <span class="poem-line-break">that swings open,</span>
+        <span class="poem-line-break">it is a window</span>
+        <span class="poem-line-break">found in winter,</span>
+        <span class="poem-line-break">letting light</span>
+        <span class="poem-line-break">without the cold.</span>
+      </p>
+      <span class="poem-dash"></span>
+      <span class="poem-attr">from A February Poem</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT AUTHOR -->
+<section id="author">
+  <div class="author-inner">
+    <div class="author-portrait reveal-left">
+      <div class="portrait-frame">
+        <img src="assets/Glenda M.jpeg" alt="Portrait of Glenda Muthuhadini" class="portrait-image">
+        <div class="portrait-overlay"></div>
+        <div class="portrait-border-glow"></div>
+      </div>
+      <div class="author-caption">
+        <span class="author-name-display">Glenda Muthuhadini</span>
+        <span class="author-role">Poet · Memoirist · Storyteller</span>
+      </div>
+    </div>
+
+    <div class="author-text reveal-right">
+      <span class="section-label">The Author</span>
+      <h2 class="section-heading">Written from the<br><em>inside of things</em></h2>
+      <p class="author-bio">
+        <strong>Glenda Muthuhadini</strong> writes from the quiet spaces, the pauses between words, the silences after doors close. A South African writer who has always believed that <em>poetry is not an art form, but a survival form</em>, she began writing <em>A February Poem</em> during the coldest season of her life.
+      </p>
+      <p class="author-bio">
+        What began as private entries, words pressed into notebooks at 2am, lines that never expected to be read, slowly became something she could not hold alone. Glenda shaped those fragments into a collection that is part confession, part love letter, part gentle instruction on how to carry loss <strong>without letting it carry you.</strong>
+      </p>
+      <p class="author-bio">
+        She lives in Johannesburg, where she writes, teaches creative writing workshops to young women, and believes that <em>every ordinary life holds an extraordinary story.</em> This is hers.
+      </p>
+
+      <div style="display:flex;gap:20px;margin-top:32px;flex-wrap:wrap;">
+        <a href="#" class="btn-outline" style="font-size:0.75rem;padding:12px 28px;">Follow on Instagram</a>
+        <a href="#" class="btn-outline" style="font-size:0.75rem;padding:12px 28px;">TikTok</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE SECTION -->
+<section id="quote">
+  <div class="quote-bg-glow"></div>
+  <div class="reveal" style="position:relative;z-index:2;">
+    <span class="quote-mark">"</span>
+    <blockquote class="main-quote">
+      This is not just what I lived,<br>
+      this is what I <em style="color:var(--rose);">learned.</em>
+    </blockquote>
+    <div class="divider" style="margin-top:40px;"></div>
+    <span class="quote-source">— Glenda Muthuhadini · A February Poem</span>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="features-inner">
+    <div class="features-header reveal">
+      <span class="section-label">Inside the Collection</span>
+      <h2 class="section-heading">Themes that <em>breathe</em></h2>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal" style="transition-delay:0.05s;">
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4.75 5.75A2.75 2.75 0 0 1 7.5 3h10.75v15.25A2.75 2.75 0 0 0 15.5 21H7.5a2.75 2.75 0 0 1-2.75-2.75z"/>
+            <path d="M8 7.5h6.5"/>
+            <path d="M8 11h6.5"/>
+            <path d="M15.5 21a2.75 2.75 0 0 0-2.75-2.75H18.25"/>
+          </svg>
+        </span>
+        <span class="feature-name">Memoir</span>
+        <p class="feature-desc">Honest, lived, unflinching personal narrative</p>
+      </div>
+      <div class="feature-card reveal" style="transition-delay:0.1s;">
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 19l3.5-.8L18.6 8.1a2.1 2.1 0 0 0 0-3l-.7-.7a2.1 2.1 0 0 0-3 0L4.8 14.5z"/>
+            <path d="M13.5 5.5l5 5"/>
+            <path d="M4.5 19.5h4.2"/>
+          </svg>
+        </span>
+        <span class="feature-name">Poetry</span>
+        <p class="feature-desc">Lyrical verse shaped by breath and feeling</p>
+      </div>
+      <div class="feature-card reveal" style="transition-delay:0.15s;">
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 20v-5.5"/>
+            <path d="M12 14.5c0-3.2 2.2-5 4.6-5 0 2.9-1.5 5-4.6 5z"/>
+            <path d="M12 14.5c0-3.2-2.2-5-4.6-5 0 2.9 1.5 5 4.6 5z"/>
+            <path d="M12 10.5c-2.1 0-3.8-1.8-3.8-4 2.4 0 3.8 1.7 3.8 4z"/>
+            <path d="M12 10.5c2.1 0 3.8-1.8 3.8-4-2.4 0-3.8 1.7-3.8 4z"/>
+          </svg>
+        </span>
+        <span class="feature-name">Love & Healing</span>
+        <p class="feature-desc">The tenderness of loss and its quiet aftermath</p>
+      </div>
+      <div class="feature-card reveal" style="transition-delay:0.2s;">
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 20v-6"/>
+            <path d="M12 14c0-3.6 2.2-6 6-6 0 3.6-2.1 6-6 6z"/>
+            <path d="M12 11.5c-3 0-5-2.1-5-5.5 3.2 0 5 2.2 5 5.5z"/>
+          </svg>
+        </span>
+        <span class="feature-name">Personal Growth</span>
+        <p class="feature-desc">Becoming, slowly, in the months after breaking</p>
+      </div>
+      <div class="feature-card reveal" style="transition-delay:0.25s;">
+        <span class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="6.5" width="16" height="11" rx="1.8"/>
+            <path d="M5.5 8l6.5 5 6.5-5"/>
+            <path d="M9 12.2l-3.5 3.3"/>
+            <path d="M15 12.2l3.5 3.3"/>
+          </svg>
+        </span>
+        <span class="feature-name">Letters & Reflection</span>
+        <p class="feature-desc">Words written to the past, with grace</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="testimonials-shell">
+    <div class="testimonials-header reveal">
+      <span class="section-label">Reader Responses</span>
+      <h2 class="section-heading">What it <em>feels like</em></h2>
+      <p class="testimonials-intro">Not blurbs. Not sales copy. Just the after-feeling readers carried with them when the last page closed.</p>
+    </div>
+    <div class="testimonials-carousel reveal">
+      <div class="testimonials-topline">
+        <div class="testimonials-meta">
+          <span class="testimonials-kicker">Five-star reader notes</span>
+          <span class="testimonials-count"><span class="current-testimonial">01</span> / 05</span>
+        </div>
+        <div class="testimonials-controls">
+          <button class="testimonial-nav testimonial-prev" type="button" aria-label="Previous review">
+            <span aria-hidden="true">&larr;</span>
+          </button>
+          <button class="testimonial-nav testimonial-next" type="button" aria-label="Next review">
+            <span aria-hidden="true">&rarr;</span>
+          </button>
+        </div>
+      </div>
+      <div class="testimonials-viewport">
+        <div class="testimonials-track">
+
+    <article class="testimonial-card active" data-review="1">
+      <span class="t-stars">★★★★★</span>
+      <span class="t-quote-mark">"</span>
+      <p class="t-text">I read this at 1am and cried for the first time in months. Not sad tears, releasing ones. This book gave my grief a shape I could finally hold.</p>
+      <div class="t-author">
+        <div class="t-avatar">N</div>
+        <div class="t-name-info">
+          <span class="t-name">Naledi K.</span>
+          <span class="t-detail">Johannesburg · Early Reader</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="testimonial-card" data-review="2">
+      <span class="t-stars">★★★★★</span>
+      <span class="t-quote-mark">"</span>
+      <p class="t-text">Every poem felt like it was written about something I'd lived but never had words for. Glenda writes the way memory actually works, in pieces, in flashes, in beauty.</p>
+      <div class="t-author">
+        <div class="t-avatar">T</div>
+        <div class="t-name-info">
+          <span class="t-name">Tumelo M.</span>
+          <span class="t-detail">Pretoria · Goodreads Reviewer</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="testimonial-card" data-review="3">
+      <span class="t-stars">★★★★★</span>
+      <span class="t-quote-mark">"</span>
+      <p class="t-text">I gifted this to three friends going through heartbreak. It is the most honest thing I have ever read about what love costs and what it teaches you when it leaves.</p>
+      <div class="t-author">
+        <div class="t-avatar">S</div>
+        <div class="t-name-info">
+          <span class="t-name">Siyanda R.</span>
+          <span class="t-detail">Cape Town · Bookstagram</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="testimonial-card" data-review="4">
+      <span class="t-stars">★★★★★</span>
+      <span class="t-quote-mark">"</span>
+      <p class="t-text">As someone who grew up not seeing African women's interior lives written with this level of elegance, this book felt like permission. Like being seen at last.</p>
+      <div class="t-author">
+        <div class="t-avatar">A</div>
+        <div class="t-name-info">
+          <span class="t-name">Amahle D.</span>
+          <span class="t-detail">Durban · Literary Blog</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="testimonial-card" data-review="5">
+      <span class="t-stars">★★★★★</span>
+      <span class="t-quote-mark">"</span>
+      <p class="t-text">I pressed the book to my chest when I finished reading. Some books you consume. This one, you let it consume you. Glenda is a rare, necessary voice.</p>
+      <div class="t-author">
+        <div class="t-avatar">Z</div>
+        <div class="t-name-info">
+          <span class="t-name">Zanele F.</span>
+          <span class="t-detail">Soweto · Wattpad Community</span>
+        </div>
+      </div>
+    </article>
+
+        </div>
+      </div>
+      <div class="testimonials-dots" aria-label="Review navigation"></div>
+    </div>
+  </div>
+</section>
+
+<!-- PURCHASE -->
+<section id="purchase">
+  <div class="purchase-inner">
+    <div class="purchase-book-display reveal-left">
+      <div style="position:relative;">
+        <div class="purchase-glow"></div>
+        <div class="book-3d" aria-hidden="true">
+          <div class="book-stack-shadow"></div>
+          <div class="book-cover-frame">
+            <img src="assets/Book cover.jpeg" alt="A February Poem book cover" class="book-cover-image">
+            <div class="book-cover-sheen"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal-right">
+      <span class="section-label">Available Now</span>
+      <h2 class="section-heading">Own a piece of<br><em>something real</em></h2>
+      <p style="font-family:'EB Garamond',serif;font-size:1.1rem;color:var(--text-dim);line-height:1.8;margin-bottom:32px;">
+        <em>A February Poem</em> is available in three forms, each one designed for how you want to carry this story with you.
+      </p>
+
+      <div class="purchase-options">
+        <div class="purchase-option">
+          <div class="option-info">
+            <span class="option-name">Hardcover Edition</span>
+            <span class="option-desc">Cloth-bound · Gold foil lettering · Ribbon marker</span>
+          </div>
+          <span class="option-badge">Most Loved</span>
+        </div>
+        <div class="purchase-option">
+          <div class="option-info">
+            <span class="option-name">eBook Edition</span>
+            <span class="option-desc">Kindle · ePub · PDF · Instant delivery</span>
+          </div>
+        </div>
+        <div class="purchase-option">
+          <div class="option-info">
+            <span class="option-name">Signed Copy</span>
+            <span class="option-desc">Personally signed · Limited stock · Includes letter</span>
+          </div>
+          <span class="option-badge">Limited</span>
+        </div>
+      </div>
+
+      <div class="purchase-btns">
+        <a href="#" class="btn-primary">Buy Now</a>
+        <a href="#poems" class="btn-outline">Read Sample</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section id="newsletter">
+  <div class="newsletter-glow"></div>
+  <div class="newsletter-inner reveal">
+    <div class="newsletter-script">letters</div>
+    <h2 class="newsletter-title">Receive letters, poems,<br>and quiet thoughts.</h2>
+    <p class="newsletter-sub">
+      Join a small, intimate community of readers, no noise, no noise, just writing that arrives when you need it most.
+    </p>
+    <div class="newsletter-form">
+      <input class="newsletter-input" type="email" placeholder="your email address">
+      <button class="btn-primary" style="white-space:nowrap;padding:14px 28px;border:none;">Subscribe</button>
+    </div>
+    <p style="font-family:'Crimson Pro',serif;font-size:0.7rem;letter-spacing:0.1em;color:var(--text-dim);opacity:0.35;margin-top:16px;">
+      No spam. Unsubscribe anytime. Only what matters.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a href="#hero" class="footer-logo">A February Poem</a>
+
+    <ul class="footer-links">
+      <li><a href="#about">The Book</a></li>
+      <li><a href="#poems">Excerpts</a></li>
+      <li><a href="#author">Author</a></li>
+      <li><a href="#purchase">Order</a></li>
+      <li><a href="#newsletter">Newsletter</a></li>
+    </ul>
+
+    <div class="footer-socials">
+      <a href="#" class="footer-social" title="Instagram">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="2" y="2" width="20" height="20" rx="5"/>
+          <circle cx="12" cy="12" r="5"/>
+          <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+      <a href="#" class="footer-social" title="TikTok">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V9.01a8.16 8.16 0 004.77 1.52V7.08a4.85 4.85 0 01-1-.39z"/>
+        </svg>
+      </a>
+      <a href="mailto:glenda@afebruarypoem.com" class="footer-social" title="Email">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <polyline points="2,4 12,13 22,4"/>
+        </svg>
+      </a>
+      <a href="#" class="footer-social" title="Goodreads">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M11.43 23.992c-2.96-.032-5.603-1.108-7.277-3.524-.26-.374-.455-.791-.577-1.233.148.132.295.261.45.385 1.424 1.14 3.062 1.816 4.883 1.98 2.142.195 4.122-.26 5.86-1.466.67-.47 1.235-1.054 1.696-1.72H16.4c-1.7 2.566-4.144 3.708-6.97 3.578zM11.43.008c3.41 0 6.156 1.381 8.148 4.046 1.565 2.099 2.297 4.472 2.24 7.09-.058 2.618-.862 4.975-2.486 7.01-1.92 2.39-4.41 3.6-7.432 3.688-3.02.087-5.57-.94-7.6-3.2C2.37 16.34 1.32 13.638 1.206 10.617c-.113-3.02.683-5.735 2.417-8.088A10.5 10.5 0 0111.43.008z"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="footer-copy">
+      © 2025 Glenda Muthuhadini · A February Poem · All rights reserved
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
