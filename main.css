@@ -119,7 +119,7 @@
   background:
     linear-gradient(90deg, rgba(8,3,5,0.88) 0%, rgba(8,3,5,0.82) 22%, rgba(8,3,5,0.34) 46%, rgba(8,3,5,0.08) 66%, rgba(8,3,5,0.24) 100%),
     linear-gradient(180deg, rgba(35,6,10,0.34) 0%, rgba(14,6,8,0.08) 40%, rgba(14,6,8,0.5) 100%),
-    url("assets/Hero BG.png") center center / cover no-repeat;
+    url("assets/hero-bg.png") center center / cover no-repeat;
 }
 
 .hero-content {
@@ -1268,7 +1268,7 @@
     .hero-bg {
       background:
         linear-gradient(180deg, rgba(8,3,5,0.62) 0%, rgba(8,3,5,0.42) 28%, rgba(8,3,5,0.7) 100%),
-        url("assets/Hero BG.png") 62% center / cover no-repeat;
+        url("assets/hero-bg.png") 62% center / cover no-repeat;
     }
     .hero-content {
       text-align: center;
@@ -1464,5 +1464,4 @@
     .footer-copy span + span {
       margin-top: 8px;
     }
-  }
-
+  }`r`n
